@@ -1,12 +1,20 @@
-import NavbarPromos from "../../common/messagePromo/NavbarPromos"
+import { useContext } from "react"
+import { CartContext } from "../../../context/CartContext"
+import CartPresentacional from "./CartPresentacional"
 
 const CartContainer = () => {
+    const { scrollUp, cart, clearCart, deleteProductById, getTotalProductPrice, getTotalPrice } = useContext(CartContext)
+
+    let total = getTotalPrice()
+
+    const handleClearCart = () => {
+        clearCart()
+        alert(`Your Bag was cleared.`)
+    }
+
     return (
         <>
-            <NavbarPromos />
-            <div className="carrito_container">
-                <h1>Pagina del carrito</h1>
-            </div>
+            <CartPresentacional scrollUp={scrollUp} cart={cart} deleteProductById={deleteProductById} handleClearCart={handleClearCart} getTotalProductPrice={getTotalProductPrice} total={total} />
         </>
     )
 }

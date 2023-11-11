@@ -1,30 +1,45 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { products } from '../../../productsMock'
+import { getDocs, collection, query, where, addDoc } from "firebase/firestore"
+import { dataBase } from '../../../firebaseConfig'
 import ItemListPresentacional from './ItemListPresentacional'
-
+import Loader from '../../common/loader/Loader'
 
 const ItemListContainer = () => {
-
     const [items, setItems] = useState([])
-
     const { categoryName } = useParams()
 
+    // const rellenarDB = () => {
+    //     const productsConllection = collection(dataBase, "products")
+    //     products.forEach((e)=>{
+    //         addDoc(productsConllection, e)
+    //     })
+    // }
+
     useEffect(() => {
-        const productsFiltered = products.filter(product => product.categoria === categoryName)
-        const tarea = new Promise((resolve, reject) => {
-            resolve(categoryName ? productsFiltered : products)
-            reject('algo salió mal')
+        let productsConllection = collection(dataBase, "products")
+        let request = undefined
+        if (!categoryName) {
+            request = productsConllection
+        } else {
+            request = query(productsConllection, where("category", "==", categoryName))
+        }
+        getDocs(request).then(res => {
+            let newArray = res.docs.map(product => {
+                return { ...product.data(), id: product.id }
+            })
+            setItems(newArray)
         })
-
-        tarea
-            .then((resolve) => setItems(resolve))
-            .catch((reject) => console.log(reject))
-
         window.scrollTo(0, 0)
     }, [categoryName])
 
-    return (<ItemListPresentacional items={items} greeting={"Welcome to iStore."} />)
+    return (
+        <>
+            {
+                items.length === 0 ? <Loader /> : <ItemListPresentacional items={items} greeting={"Welcome to iStore."} />
+            }
+        </>
+    )
 }
 
 export default ItemListContainer
