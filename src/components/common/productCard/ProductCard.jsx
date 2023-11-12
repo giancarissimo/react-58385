@@ -4,7 +4,7 @@ const ProductCard = ({ item }) => {
     return (
         <div className="cardProducto">
             <h3>{item.name}</h3>
-            <img className="cardProducto_img" src={`../src/assets/images/store/${item.image}`} alt={item.name}></img>
+            <img className="cardProducto_img" src={`/assets/images/store/${item.image}`} alt={item.name}></img>
             <div className="cardProducto_info">
                 <div className="cardProducto_info_text">
                     <h4>From ${parseFloat(item.price).toFixed(2)}</h4>

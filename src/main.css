@@ -16,14 +16,14 @@
     font-family: 'sf pro text';
     font-style: normal;
     font-weight: 300;
-    src: url(../src/assets/fonts/SF-Pro-Text/SF-Pro-Text-Light.woff2) format('woff2'), url(../src/assets/fonts/SF-Pro-Text/SF-Pro-Text-Light.woff) format('woff'), url(../src/assets/fonts/SF-Pro-Text/SF-Pro-Text-Light.ttf) format('truetype'), url(../src/assets/fonts/SF-Pro-Text/SF-Pro-Text-Light.otf) format('openType');
+    src: url(/assets/fonts/SF-Pro-Text/SF-Pro-Text-Light.woff2) format('woff2'), url(/assets/fonts/SF-Pro-Text/SF-Pro-Text-Light.woff) format('woff'), url(/assets/fonts/SF-Pro-Text/SF-Pro-Text-Light.ttf) format('truetype'), url(/assets/fonts/SF-Pro-Text/SF-Pro-Text-Light.otf) format('openType');
 }
 
 @font-face {
     font-family: 'sf pro display';
     font-style: normal;
     font-weight: 600;
-    src: url(../src/assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff2) format('woff2'), url(../src/assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff) format('woff'), url(../src/assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.ttf) format('truetype'), url(../src/assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.otf) format('openType');
+    src: url(/assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff2) format('woff2'), url(/assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff) format('woff'), url(/assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.ttf) format('truetype'), url(/assets/fonts/SF-Pro-Display/SF-Pro-Display-Semibold.otf) format('openType');
 }
 
 /** -------------------- Reset -------------------- **/
