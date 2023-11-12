@@ -19,7 +19,7 @@ Este proyecto será sobre una tienda online inspirada en Apple, donde los usuari
 ## SCREENSHOTS - Desktop
 +   Screenshot tomado del Home:
 
-![Home Screenshot.](/Public/assets/images/screens/screen_home-page.png)
+![Home Screenshot.](/public/assets/images/screens/screen_home-page.png)
 
 +   Screenshot tomado del ProductDetail:
 
