@@ -83,7 +83,7 @@ A su vez, dentro de Firebase, se creará un apartado llamado "orders" que nos di
 }
 ```
 
-![Conditional Render Example.](src/assets/images/screens/screen_conditional-render-example.png)
+![Conditional Render Example.](/public/assets/images/screens/screen_conditional-render-example.png)
 
 ## FUTURAS FUNCIONALIDADES
 * [ ]  Hacer funcionar la 'lupa' para buscar un producto.
