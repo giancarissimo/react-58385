@@ -1,8 +1,8 @@
 import { useState, useContext } from "react"
-import CounterPresentacional from "./CounterPresentacional"
+import ItemCountPresentacional from "./ItemCountPresentacional"
 import { CartContext } from "../../../context/CartContext"
 
-const CounterContainer = ({ product }) => {
+const ItemCountContainer = ({ product }) => {
     const [counter, setCounter] = useState(product.quantity)
     const { increaseQuantity, decreaseQuantity } = useContext(CartContext)
 
@@ -22,8 +22,8 @@ const CounterContainer = ({ product }) => {
     }
 
     return (
-        <CounterPresentacional restar={restar} counter={counter} sumar={sumar} />
+        <ItemCountPresentacional restar={restar} counter={counter} sumar={sumar} />
     )
 }
 
-export default CounterContainer
+export default ItemCountContainer

@@ -1,5 +1,5 @@
 
-const CounterPresentacional = ({ restar, counter, sumar }) => {
+const ItemCountPresentacional = ({ restar, counter, sumar }) => {
     return (
         <div className="counter_container">
             <button onClick={restar}>-</button>
@@ -9,4 +9,4 @@ const CounterPresentacional = ({ restar, counter, sumar }) => {
     )
 }
 
-export default CounterPresentacional
+export default ItemCountPresentacional

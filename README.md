@@ -85,6 +85,9 @@ A su vez, dentro de Firebase, se creará un apartado llamado "orders" que nos di
 
 ![Conditional Render Example.](/public/assets/images/screens/screen_conditional-render-example.png)
 
+## CHANGELOGS 4:
++   Se modificó el nombre del componente CounterContainer.jsx: ahora se llama ItemCountContainer.jsx
+
 ## FUTURAS FUNCIONALIDADES
 * [ ]  Hacer funcionar la 'lupa' para buscar un producto.
 * [x]  Crear un Counter para controlar la cantidad de un producto en el carrito.

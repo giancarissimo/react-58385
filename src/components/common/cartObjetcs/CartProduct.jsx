@@ -1,4 +1,4 @@
-import CounterContainer from "../CounterContainer/CounterContainer"
+import ItemCountContainer from "../itemCount/ItemCountContainer"
 
 const CartProduct = ({ product, deleteProductById, getTotalProductPrice }) => {
     let totalProductPrice = getTotalProductPrice(product)
@@ -10,8 +10,7 @@ const CartProduct = ({ product, deleteProductById, getTotalProductPrice }) => {
                 <h3>{product.name}</h3>
             </div>
             <div className="producto_carrito_container_InfoProd">
-                {/* <p>{product.quantity}</p> */}
-                <CounterContainer product={product} />
+                <ItemCountContainer product={product} />
                 <h4>${parseFloat(totalProductPrice).toFixed(2)}</h4>
             </div>
             <button onClick={() => deleteProductById(product.id, product)}>Remove</button>
