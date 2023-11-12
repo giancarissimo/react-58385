@@ -19,21 +19,21 @@ Este proyecto será sobre una tienda online inspirada en Apple, donde los usuari
 ## SCREENSHOTS - Desktop
 +   Screenshot tomado del Home:
 
-![Home Screenshot.](src/assets/images/screens/screen_home-page.png)
+![Home Screenshot.](/Public/assets/images/screens/screen_home-page.png)
 
 +   Screenshot tomado del ProductDetail:
 
-![Item Detail Screenshot.](src/assets/images/screens/screen_itemDetail-page.png)
+![Item Detail Screenshot.](/public/assets/images/screens/screen_itemDetail-page.png)
 
 +   Screenshot tomado del Cart:
 
-![Cart Screenshot.](src/assets/images/screens/screen_cart-page.png)
+![Cart Screenshot.](/public/assets/images/screens/screen_cart-page.png)
 
 +   Screenshot tomado del Checkout:
 
-![Checkout Screenshot 1.](src/assets/images/screens/screen_checkout-page-1.png)
+![Checkout Screenshot 1.](/public/assets/images/screens/screen_checkout-page-1.png)
 
-![Checkout Screenshot 2.](src/assets/images/screens/screen_checkout-page-2.png)
+![Checkout Screenshot 2.](/public/assets/images/screens/screen_checkout-page-2.png)
 
 ## TECNOLOGÍAS UTILIZADAS
 + [React](https://es.react.dev/) + [Vite](https://vitejs.dev/)
@@ -42,7 +42,7 @@ Este proyecto será sobre una tienda online inspirada en Apple, donde los usuari
 + [react-loader-spinner](https://mhnpd.github.io/react-loader-spinner/)
 
 ## INSTRUCCIONES DE USO
-Si lo deseas, puedes acceder al sitio [aquí]().
+Si lo deseas, puedes acceder al sitio [aquí](https://react-58385.vercel.app/).
 
 ## CHANGELOGS 1:
 +   Se instaló React + Vite.
