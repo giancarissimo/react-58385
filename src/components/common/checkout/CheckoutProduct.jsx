@@ -4,7 +4,7 @@ const CheckoutProduct = ({ product, getTotalProductPrice }) => {
 
     return (
         <div className="producto_checkout">
-            <img className="producto_checkout_img" src={`../../src/assets/images/store/${product.image}`} alt={product.name}></img>
+            <img className="producto_checkout_img" src={`../src/assets/images/store/${product.image}`} alt={product.name}></img>
             <div className="producto_checkout_containerh3">
                 <h3>{product.name}</h3>
             </div>

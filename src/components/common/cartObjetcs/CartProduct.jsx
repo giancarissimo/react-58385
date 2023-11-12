@@ -5,7 +5,7 @@ const CartProduct = ({ product, deleteProductById, getTotalProductPrice }) => {
 
     return (
         <div className="producto_carrito">
-            <img className="producto_carrito_img" src={`../../src/assets/images/store/${product.image}`} alt={product.name}></img>
+            <img className="producto_carrito_img" src={`../src/assets/images/store/${product.image}`} alt={product.name}></img>
             <div className="producto_carrito_containerh3">
                 <h3>{product.name}</h3>
             </div>

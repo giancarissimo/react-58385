@@ -5,7 +5,7 @@ const ItemDetailPresentacional = ({ productSelected, onAdd }) => {
         <section className="section_itemDetail">
             <div className="itemDetail_container">
                 <div className="itemDetail_product_container">
-                    <img src={`../../src/assets/images/store/${productSelected.image}`} alt={productSelected.name}></img>
+                    <img src={`../src/assets/images/store/${productSelected.image}`} alt={productSelected.name}></img>
                     <aside className="itemDetail_buy">
                         <div className="itemDetail_buy_details">
                             <h1>{productSelected.name}</h1>

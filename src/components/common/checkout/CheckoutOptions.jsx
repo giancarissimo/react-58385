@@ -16,10 +16,10 @@ const CheckoutOptions = ({ scrollUp, buttonShowForm, showForm }) => {
                 </Link>
                 {
                     !showForm ? <div className="checkout_option_form" onClick={buttonShowForm}>
-                        <img src="../../src/assets/images/checkout/apple_card_icon.png" alt="card icon" />
+                        <img src="../src/assets/images/checkout/apple_card_icon.png" alt="card icon" />
                         <span>Continue to payment.</span>
                     </div> : <div className="checkout_option_form_v2">
-                        <img src="../../src/assets/images/checkout/apple_card_icon.png" alt="card icon" />
+                        <img src="../src/assets/images/checkout/apple_card_icon.png" alt="card icon" />
                         <span>Continue to payment.</span>
                     </div>
                 }
